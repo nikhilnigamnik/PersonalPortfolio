@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className="mt-[12rem]">
       <PageLoader />
-      <h1 className="font-bold text-center text-[2rem]">Contact</h1>
+      <h1 className="font-bold text-center text-[2rem]">Contact Me</h1>
       <div>
         <div className="mt-10 text-center">
           <h1 className="font-bold text-2xl">let's Chat Tell me about your</h1>
@@ -17,9 +17,11 @@ const Contact = () => {
         </div>
         <SocialLinks />
         <Link to="mailto:nikhilnigamnik@gmail.com" target="_blank">
-          <Button className="w-full shadow-none hover:shadow-none bg-gray-900 ho mt-10">
-            Send Message
-          </Button>
+          <div className="flex justify-center">
+            <Button className="shadow-none hover:shadow-none bg-gray-900 ho mt-10">
+              Send Message
+            </Button>
+          </div>
         </Link>
       </div>
     </div>

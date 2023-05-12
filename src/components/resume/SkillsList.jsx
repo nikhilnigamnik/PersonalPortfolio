@@ -1,10 +1,17 @@
 import { Tooltip } from "@material-tailwind/react";
 import React from "react";
+import {motion } from 'framer-motion';
 
 const SkillsList = () => (
   <div className="mt-10">
     <h1 className="font-bold text-[1.8rem]">Skills</h1>
-    <div className="flex flex-wrap gap-4 justify-center items-center mt-8 ">
+    <motion.div
+      initial={{ opacity: 0, y: 300 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      className="flex flex-wrap gap-4 justify-center items-center mt-8 "
+    >
       <Tooltip content="Figma">
         <img
           className="w-[10rem] hover:shadow-inner hover:border bg-white rounded-xl p-8"
@@ -131,7 +138,7 @@ const SkillsList = () => (
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
         />
       </Tooltip>
-    </div>
+    </motion.div>
   </div>
 );
 

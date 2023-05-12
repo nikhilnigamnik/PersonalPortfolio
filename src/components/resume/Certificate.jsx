@@ -3,6 +3,7 @@ import React from "react";
 import course from "../resume/coursera.png";
 import free from "../resume/free.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const cardsData = [
   {
@@ -21,7 +22,7 @@ const cardsData = [
   },
 ];
 
-const CardPro = ({ id, title, description,link, imageUrl }) => (
+const CardPro = ({ id, title, description, link, imageUrl }) => (
   <div
     key={id}
     className="bg-white flex border justify-between flex-col rounded-xl mt-10 p-8"
@@ -47,7 +48,7 @@ const CardPro = ({ id, title, description,link, imageUrl }) => (
 const ProjectCard = () => (
   <div className="  mt-10">
     <h1 className="font-bold text-[1.8rem]">Certificates</h1>
-    <div className="grid  gap-6 grid-cols-2 card">
+     <div className="grid sm:grid-cols-1  gap-6 xl:grid-cols-2 card">
       {cardsData.map((card) => (
         <CardPro key={card.id} {...card} />
       ))}

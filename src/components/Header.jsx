@@ -34,7 +34,7 @@ const Header = () => {
           <Button className="transition-all bg-gray-900 shadow-none hover:shadow-none">
             My story 👉
           </Button>
-          <Link to="/services">
+          <Link to="/work">
             <Button className="bg-gray-900 shadow-none hover:shadow-none">See Work 👉</Button>
           </Link>
         </div>

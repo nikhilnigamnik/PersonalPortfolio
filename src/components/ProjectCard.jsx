@@ -75,7 +75,7 @@ const CardPro = ({ id, title, description, link, imageUrl }) => (
 );
 
 const ProjectCard = () => (
-  <div className="grid gap-5  grid-cols-2 card">
+  <div className="grid sm:grid-cols-1  gap-6 xl:grid-cols-2 card">
     {cardsData.map((card) => (
       <CardPro key={card.id} {...card} />
     ))}

@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import PreLoader from "./components/PreLoader";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/work" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }

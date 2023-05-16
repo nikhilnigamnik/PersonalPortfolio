@@ -1,6 +1,7 @@
 import cart from "../assets/project/cart.webp";
 import blog from "../assets/project/blog.webp";
 import gif from "../assets/project/gif.webp";
+import pass from "../assets/project/pass.jpg";
 import React from "react";
 import {
   Card,
@@ -36,6 +37,14 @@ const cardsData = [
       "A gif generator reactJs application where you can find any type of gif by searching functionality",
     imageUrl: gif,
     link: "https://gifgenerator.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "Password Generator",
+    description:
+      "It helps users create stronger passwords that provide greater security for a given type of access.",
+    imageUrl: pass,
+    link: "https://passgenerator-two.vercel.app/",
   },
 ];
 

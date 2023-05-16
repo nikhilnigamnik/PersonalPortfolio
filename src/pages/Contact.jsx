@@ -4,6 +4,7 @@ import SocialLinks from "../components/social/SocialLinks";
 import { Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 import ContactForm from "../components/ContactForm";
+import { ContactUs } from "../components/ContactNew";
 
 const Contact = () => {
   return (
@@ -17,7 +18,8 @@ const Contact = () => {
           <p className="mt-4">Let's create something together 🤘</p>
         </div>
         {/* <SocialLinks /> */}
-        <ContactForm />
+        {/* <ContactForm /> */}
+      <ContactUs/>
         {/* <Link to="mailto:nikhilnigamnik@gmail.com" target="_blank">
           <div className="flex justify-center">
             <Button className="shadow-none hover:shadow-none bg-gray-900 ho mt-10">

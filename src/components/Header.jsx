@@ -41,7 +41,7 @@ const Header = () => {
       </div>
       <img
         className="w-[80%] logo hover:transform transition-all rounded-[10px]  hover:-rotate-2 "
-        src={head}
+        src="https://res.cloudinary.com/dtmp7op6k/image/upload/v1684322785/logo_onussv.jpg"
       />
     </div>
   );

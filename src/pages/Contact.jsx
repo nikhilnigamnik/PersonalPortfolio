@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import ContactForm from "../components/ContactForm";
 import { ContactUs } from "../components/ContactNew";
 
+
 const Contact = () => {
   return (
     <div className="mt-[12rem]">

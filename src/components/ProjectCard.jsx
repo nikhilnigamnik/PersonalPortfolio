@@ -1,7 +1,3 @@
-import cart from "../assets/project/cart.webp";
-import blog from "../assets/project/blog.webp";
-import gif from "../assets/project/gif.webp";
-import pass from "../assets/project/pass.jpg";
 import {
   Card,
   CardHeader,
@@ -52,79 +48,47 @@ const cardsData = [
   },
 ];
 
-// const CardPro = ({ id, title, description, link, imageUrl }) => (
-
-//   <div key={id} className="card">
-//     <Card className="bg-white mt-10">
-//       <CardHeader shadow={false} floated={false} className="h-96">
-//         <img src={imageUrl} className="w-full h-full object-cover" />
-//       </CardHeader>
-//       <CardBody>
-//         <div className="flex items-center justify-between mb-2">
-//           <Typography color="blue-gray" className="font-medium">
-//             {title}
-//           </Typography>
-//         </div>
-//         <Typography
-//           variant="small"
-//           color="gray"
-//           className="font-normal opacity-75"
-//         >
-//           {description}
-//         </Typography>
-//       </CardBody>
-
-//       <div className="flex m-4 items-center">
-//         <Link to={link} target="_blank">
-//           <Button className="bg-gray-900 mr-5 shadow-current hover:shadow-current">
-//             See Live
-//           </Button>
-//         </Link>
-//         <IconButton className="bg-gray-900  shadow-none hover:shadow-none text-white  p-5 rounded-[8px]">
-//           <AiFillGithub />
-//         </IconButton>
-//       </div>
-//     </Card>
-//   </div>
-// );
 
 const CardPro = ({ imageUrl, title, description, link, id }) => {
   const [showText, setShowText] = useState(false);
 
   return (
-    <div
-      key={id}
-      className="relative max-w-sm mx-auto overflow-hidden rounded-lg shadow-lg"
-    >
-      <img
-        className={`object-cover w-full h-64 transition duration-500 ease-in-out ${
-          showText ? "blur-md" : ""
-        }`}
-        src={imageUrl}
-        alt="Card image"
-      />
+    <Link to={link} target="_blank">
       <div
-        className={`${
-          showText ? "opacity-100" : "opacity-0"
-        } transition-opacity duration-500 absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-white`}
+        key={id}
+        className="relative p-8 max-w-sm mx-auto overflow-hidden rounded-[12px] shadow-lg"
       >
-        <p className="text-2xl text-black font-bold mb-2 animate-fadeIn">{title}</p>
+        <img
+          className={`object-cover rounded-[6px] w-full transition duration-500 ease-in-out ${
+            showText ? "blur-md" : ""
+          }`}
+          src={imageUrl}
+          alt="Card image"
+        />
+        <div
+          className={`${
+            showText ? "opacity-100" : "opacity-0"
+          } transition-opacity duration-500 absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-white`}
+        >
+          <p className="text-2xl text-black font-bold mb-2 animate-fadeIn">
+            {title}
+          </p>
           <Button className="bg-gray-900 shadow-none hover:shadow-none ">
             See Live
           </Button>
-        
+        </div>
+        <div
+          className="absolute top-0 left-0 w-full h-full cursor-pointer"
+          onMouseEnter={() => setShowText(true)}
+          onMouseLeave={() => setShowText(false)}
+        ></div>
       </div>
-      <div
-        className="absolute top-0 left-0 w-full h-full cursor-pointer"
-        onMouseEnter={() => setShowText(true)}
-        onMouseLeave={() => setShowText(false)}
-      ></div>
-    </div>
+    </Link>
   );
 };
 
 const ProjectCard = () => (
-  <div className="grid sm:grid-cols-1  gap-6 xl:grid-cols-2 card">
+  <div className="grid mt-10 sm:grid-cols-1  gap-6 xl:grid-cols-2 card">
     {cardsData.map((card) => (
       <CardPro key={card.id} {...card} />
     ))}

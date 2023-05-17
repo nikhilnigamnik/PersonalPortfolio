@@ -3,12 +3,12 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import Accodion from "../components/Accordion";
 import PageLoader from "../components/PageLoader";
-
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
     <div className="mt-[12rem] mb-20">
-  <PageLoader/>
+      <PageLoader />
       <div>
         <h1 className="font-bold text-center text-[2rem]">My Work</h1>
 
@@ -17,9 +17,11 @@ const Services = () => {
           Here's a Glimpse!
         </p>
         <Accodion />
-        <Button className="bg-gray-900 shadow-none hover:shadow-none mt-8">
-          Get Started 👉
-        </Button>
+        <Link to="/contact">
+          <Button className="bg-gray-900 shadow-none hover:shadow-none mt-8">
+            Get Started 👉
+          </Button>
+        </Link>
       </div>
       <div className="mt-8">
         <h1 className="font-bold text-[2rem]">My Project</h1>

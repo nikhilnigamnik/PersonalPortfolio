@@ -1,7 +1,3 @@
-import first from "../assets/emoOne.webp";
-import second from "../assets/emoTwo.webp";
-import third from "../assets/emoThree.webp";
-import four from "../assets/emoFour.webp";
 import { Link } from "react-router-dom";
 const NavBar = () => {
   return (

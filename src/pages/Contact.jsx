@@ -3,7 +3,6 @@ import PageLoader from "../components/PageLoader";
 import SocialLinks from "../components/social/SocialLinks";
 import { Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
-import ContactForm from "../components/ContactForm";
 import { ContactUs } from "../components/ContactNew";
 
 

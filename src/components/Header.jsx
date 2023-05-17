@@ -1,5 +1,5 @@
 import React from "react";
-import head from "../assets/logo.jpg";
+
 
 import { Link } from "react-router-dom";
 import { Button } from "@material-tailwind/react";

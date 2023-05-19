@@ -3,7 +3,7 @@ import React from "react";
 import course from "../resume/coursera.png";
 import free from "../resume/free.png";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+
 
 const cardsData = [
   {

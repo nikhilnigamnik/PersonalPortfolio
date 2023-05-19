@@ -1,12 +1,5 @@
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Typography,
-  Button,
-  IconButton,
-} from "@material-tailwind/react";
-import { AiFillGithub } from "react-icons/ai";
+import { Button } from "@material-tailwind/react";
+
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -47,7 +40,6 @@ const cardsData = [
     link: "https://passgenerator-two.vercel.app/",
   },
 ];
-
 
 const CardPro = ({ imageUrl, title, description, link, id }) => {
   const [showText, setShowText] = useState(false);

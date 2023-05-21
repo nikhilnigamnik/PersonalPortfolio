@@ -20,7 +20,7 @@ export const ContactUs = () => {
       .then(
         (result) => {
           console.log(result.text);
-          form.current.reset(); // Reset the form fields
+          form.current.reset(); 
         },
         (error) => {
           console.log(error.text);

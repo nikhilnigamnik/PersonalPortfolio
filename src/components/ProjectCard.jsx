@@ -32,12 +32,21 @@ const cardsData = [
   },
   {
     id: 4,
-    title: "Password Generator",
+    title: "Food Delivery App",
     description:
       "It helps users create stronger passwords that provide greater security for a given type of access.",
     imageUrl:
-      "https://res.cloudinary.com/dtmp7op6k/image/upload/v1684322710/Screenshot_4_bcj3q8.png",
-    link: "https://passgenerator-two.vercel.app/",
+      "https://res.cloudinary.com/dtmp7op6k/image/upload/v1685515265/Screenshot_2023-05-31_120958_g1doo7.png",
+    link: "https://insta-mart.vercel.app/",
+  },
+  {
+    id: 5,
+    title: "Notes Application",
+    description:
+      "It helps users create stronger passwords that provide greater security for a given type of access.",
+    imageUrl:
+      "https://res.cloudinary.com/dtmp7op6k/image/upload/v1685551130/Screenshot_2023-05-31_220437_etqkiy.png",
+    link: "https://takeyournote.vercel.app/",
   },
 ];
 

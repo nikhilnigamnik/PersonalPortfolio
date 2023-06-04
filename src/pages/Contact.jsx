@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageLoader from "../components/PageLoader";
 
 import { ContactUs } from "../components/ContactNew";
 
 const Contact = () => {
+  const TitleName = "Portfolio | Contact";
+  useEffect(() => {
+    document.title = TitleName ;
+
+  },[TitleName]);
   return (
     <div className="mt-[12rem]">
       <PageLoader />

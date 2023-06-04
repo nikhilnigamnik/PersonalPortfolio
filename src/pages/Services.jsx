@@ -1,11 +1,17 @@
 import { Button } from "@material-tailwind/react";
-import React from "react";
+import React , {useEffect} from "react";
 import ProjectCard from "../components/ProjectCard";
 import Accodion from "../components/Accordion";
 import PageLoader from "../components/PageLoader";
 import { Link } from "react-router-dom";
 
 const Services = () => {
+  const TitleName = "Portfolio | Work";
+  useEffect(() => {
+    document.title = TitleName ;
+
+  },[TitleName]);
+ 
   return (
     <div className="mt-[12rem] mb-20">
       <PageLoader />

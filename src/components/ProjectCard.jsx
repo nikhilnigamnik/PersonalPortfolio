@@ -65,6 +65,7 @@ const CardPro = ({ imageUrl, title, description, link, id }) => {
           }`}
           src={imageUrl}
           alt="Card image"
+          loading="lazy"
         />
         <div
           className={`${

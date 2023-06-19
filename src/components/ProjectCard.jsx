@@ -48,6 +48,15 @@ const cardsData = [
       "https://res.cloudinary.com/dtmp7op6k/image/upload/v1685551130/Screenshot_2023-05-31_220437_etqkiy.png",
     link: "https://takeyournote.vercel.app/",
   },
+  {
+    id: 6,
+    title: "FoodWaala",
+    description:
+      "It helps users create stronger passwords that provide greater security for a given type of access.",
+    imageUrl:
+      "https://res.cloudinary.com/dtmp7op6k/image/upload/v1687207580/Screenshot_2023-06-20_021507_hqvxm5.png",
+    link: "https://mern-project-snowy.vercel.app/",
+  },
 ];
 
 const CardPro = ({ imageUrl, title, description, link, id }) => {

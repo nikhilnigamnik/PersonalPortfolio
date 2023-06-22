@@ -6,23 +6,6 @@ import { useState } from "react";
 const cardsData = [
   {
     id: 1,
-    title: "Shopping Cart",
-    description: "Where you can add and remove product from cart",
-    imageUrl:
-      "https://res.cloudinary.com/dtmp7op6k/image/upload/v1684322711/Screenshot_3_ehhgz7.png",
-    link: "https://shopping-cart-funs.vercel.app/",
-  },
-  {
-    id: 2,
-    title: "Blog Application",
-    description:
-      "A fully functionaly blog application here you can see technology related blogs",
-    imageUrl:
-      "https://res.cloudinary.com/dtmp7op6k/image/upload/v1684322710/Screenshot_2_n2aosg.png",
-    link: "https://codepoly.vercel.app/",
-  },
-  {
-    id: 3,
     title: "Gif Generator",
     description:
       "A gif generator reactJs application where you can find any type of gif by searching functionality",
@@ -31,7 +14,7 @@ const cardsData = [
     link: "https://gifgenerator.vercel.app/",
   },
   {
-    id: 4,
+    id: 2,
     title: "Food Delivery App",
     description:
       "It helps users create stronger passwords that provide greater security for a given type of access.",
@@ -40,7 +23,7 @@ const cardsData = [
     link: "https://insta-mart.vercel.app/",
   },
   {
-    id: 5,
+    id: 3,
     title: "Notes Application",
     description:
       "It helps users create stronger passwords that provide greater security for a given type of access.",
@@ -49,13 +32,13 @@ const cardsData = [
     link: "https://takeyournote.vercel.app/",
   },
   {
-    id: 6,
+    id: 4,
     title: "FoodWaala",
     description:
       "It helps users create stronger passwords that provide greater security for a given type of access.",
     imageUrl:
       "https://res.cloudinary.com/dtmp7op6k/image/upload/v1687207580/Screenshot_2023-06-20_021507_hqvxm5.png",
-    link: "https://mern-project-snowy.vercel.app/",
+    link: "https://foodwaale.vercel.app/",
   },
 ];
 

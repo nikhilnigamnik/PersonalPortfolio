@@ -17,7 +17,7 @@ const Header = () => {
         </div>
         <div>
           <h1 className="text-[1.9rem] font-bold tracking-[1px]">
-            My name is Nikhil Nigam, and I’m a Web Designer with a Strong Sense
+            My name is Nikhil Nigam 🚀, and I’m a Web Designer with a Strong Sense
             of Humor and Creative Expertise!
           </h1>
         </div>
